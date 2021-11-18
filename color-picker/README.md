@@ -17,10 +17,10 @@ It uses two APIs
 Build Process
 
 1. Application can be build using below command
-npm build
+npm run build
 
 2. application can be run locally using below command
-npm start
+npm run start
 
 // Usage
 
