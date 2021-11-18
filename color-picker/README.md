@@ -1,70 +1,38 @@
-# Getting Started with Create React App
+#Color-Picker React application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+// Application allow user to enter the hex or color names and get the list of nearby color/colors.
+// Application is developed using the React 17.0.2
 
-## Available Scripts
+// Application allow user to search for color in two ways.
+1. By entering hex values
+2. By entering color names
 
-In the project directory, you can run:
+// Application uses a npm package
+color-name-list : https://www.npmjs.com/package/color-name-list
 
-### `npm start`
+It uses two APIs
+1. https://api.color.pizza/v1/names/?name=${{query}}
+2. https://api.color.pizza/v1/?values=${{query}}
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Build Process
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. Application can be build using below command
+npm build
 
-### `npm test`
+2. application can be run locally using below command
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+// Usage
 
-### `npm run build`
+1. 
+   - In first input, user can enter hex value without #, Also, user can enter multiple hex values in comma        separated format. ex. 000,fff,242563.
+   - Once user enter value he can click on search button and get the result.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2.
+    - In second input, user can enter any color name and he will get the nearby matching color/colors
+        ex. gray
+    - Once user enter value he can click on search button and get the result.
+    Note: comma separated color names will not work in second input. 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Firebase deploy URL:
+https://color-picker-f9460.web.app
